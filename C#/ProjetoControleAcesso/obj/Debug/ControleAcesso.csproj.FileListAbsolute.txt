@@ -1,0 +1,13 @@
+D:\Users\alexeus\source\repos\ControleAcesso\bin\Debug\ControleAcesso.exe.config
+D:\Users\alexeus\source\repos\ControleAcesso\bin\Debug\ControleAcesso.exe
+D:\Users\alexeus\source\repos\ControleAcesso\bin\Debug\ControleAcesso.pdb
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.csproj.AssemblyReference.cache
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.csproj.SuggestedBindingRedirects.cache
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.Properties.Resources.resources
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.csproj.GenerateResource.cache
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.csproj.CoreCompileInputs.cache
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.exe
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.pdb
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.frmUsuarios.resources
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.frmUsuariosCadastrar.resources
+D:\Users\alexeus\source\repos\ControleAcesso\obj\Debug\ControleAcesso.frmMenu.resources

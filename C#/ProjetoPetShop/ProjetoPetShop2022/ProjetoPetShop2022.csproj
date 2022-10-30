@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E030E76-61F9-4406-89BD-90F226D12851}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoPetShop2022</RootNamespace>
+    <AssemblyName>ProjetoPetShop2022</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetPetshop2022.cs">
+      <DependentUpon>DataSetPetshop2022.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPetshop2022.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPetshop2022.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendamento.Designer.cs">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnimal.Designer.cs">
+      <DependentUpon>frmAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalizarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalizarAgendamento.Designer.cs">
+      <DependentUpon>frmLocalizarAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalizarAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalizarAnimal.Designer.cs">
+      <DependentUpon>frmLocalizarAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalizarCliente.Designer.cs">
+      <DependentUpon>frmLocalizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalizarRaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalizarRaca.Designer.cs">
+      <DependentUpon>frmLocalizarRaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalizarServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalizarServico.Designer.cs">
+      <DependentUpon>frmLocalizarServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaca.Designer.cs">
+      <DependentUpon>frmRaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServico.Designer.cs">
+      <DependentUpon>frmServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClasseGlobal.cs" />
+    <EmbeddedResource Include="frmAgendamento.resx">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnimal.resx">
+      <DependentUpon>frmAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalizarAgendamento.resx">
+      <DependentUpon>frmLocalizarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalizarAnimal.resx">
+      <DependentUpon>frmLocalizarAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalizarCliente.resx">
+      <DependentUpon>frmLocalizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalizarRaca.resx">
+      <DependentUpon>frmLocalizarRaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalizarServico.resx">
+      <DependentUpon>frmLocalizarServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaca.resx">
+      <DependentUpon>frmRaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServico.resx">
+      <DependentUpon>frmServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSetPetshop2022.xsc">
+      <DependentUpon>DataSetPetshop2022.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPetshop2022.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPetshop2022.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetPetshop2022.xss">
+      <DependentUpon>DataSetPetshop2022.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_238659391.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-matching-pets-warren-photographic-4-57e934f0b4adc__880.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animais-no-ambiente-de-trabalho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_2386593911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foto2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking-confirmed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bunny-rabbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\184697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancelar-2-256 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-001.último-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-001.próximo-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-001.anterior-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-001.primeiro-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mais-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remover-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-services-support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking-confirmed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mais-2561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mais-25666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-256.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
